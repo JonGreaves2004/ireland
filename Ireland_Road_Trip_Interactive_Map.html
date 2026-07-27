@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63a68a30a6abffe96fedbd5a0099cb9e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; top: 10px; left: 50px; z-index:9999; background:white;
+    padding:10px 14px; border:1px solid #bbb; border-radius:8px; font-family:Arial;
+    box-shadow:0 1px 5px rgba(0,0,0,.25)">
+    <b>Ireland Road Trip - 20-27 September 2026</b><br>
+    <small>Lines show the stop sequence, not exact roads. Use each marker's Google Maps link for navigation.</small>
+    </div>
+    
+            <div class="folium-map" id="map_63a68a30a6abffe96fedbd5a0099cb9e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63a68a30a6abffe96fedbd5a0099cb9e = L.map(
+                "map_63a68a30a6abffe96fedbd5a0099cb9e",
+                {
+                    center: [53.1, -8.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+
+            
+
+        
+    
+            var tile_layer_ee46743d4859c8b32c22d6fcd29645e1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ee46743d4859c8b32c22d6fcd29645e1.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_181076b4e7f1eba56e4ca9512a77523c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_407b48397404b85f04b09afd71bada5b = L.marker(
+                [53.4264, -6.2499],
+                {
+}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            var icon_a156c081269ed95862f42257587de5f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a1642ac1017091131a801e5e44eb15a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f2117d9f7fc33a097913a6b62bc5cbbe = $(`<div id="html_f2117d9f7fc33a097913a6b62bc5cbbe" style="width: 100.0%; height: 100.0%;"><b>Day 1.1 - Dublin Airport</b><br><i>Airport</i><br>Arrival, hire-car collection and starting point.<br><b>Cost:</b> Car hire dependent<br><b>Allow:</b> Allow 45-75 min<br><b>Booking:</b> Check rental desk and shuttle details<br><a href='https://www.google.com/maps/search/?api=1&query=Dublin%20Airport%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_8a1642ac1017091131a801e5e44eb15a.setContent(html_f2117d9f7fc33a097913a6b62bc5cbbe);
+            
+        
+
+        marker_407b48397404b85f04b09afd71bada5b.bindPopup(popup_8a1642ac1017091131a801e5e44eb15a)
+        ;
+
+        
+    
+    
+            marker_407b48397404b85f04b09afd71bada5b.bindTooltip(
+                `<div>
+                     Day 1.1 Dublin Airport
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_407b48397404b85f04b09afd71bada5b.setIcon(icon_a156c081269ed95862f42257587de5f2);
+            
+    
+            var marker_402cdd1d63cfb79bc1caff84bb959865 = L.marker(
+                [53.4448, -6.1642],
+                {
+}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            var icon_1443fcd7e8d990ba20f9693ee01feacf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_463e263a64f648dd30b498f35db9cff2 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_262afb5c9989e484f2209a96a76832f6 = $(`<div id="html_262afb5c9989e484f2209a96a76832f6" style="width: 100.0%; height: 100.0%;"><b>Day 1.2 - Malahide Castle & Gardens</b><br><i>Castle</i><br>An 800-year-old castle estate with guided castle visits, gardens and parkland.<br><b>Cost:</b> Check current ticket type<br><b>Allow:</b> 60-90 min<br><b>Booking:</b> Useful rather than essential<br><a href='https://www.google.com/maps/search/?api=1&query=Malahide%20Castle%20and%20Gardens%2C%20Back%20Road%2C%20Malahide%2C%20Co.%20Dublin' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_463e263a64f648dd30b498f35db9cff2.setContent(html_262afb5c9989e484f2209a96a76832f6);
+            
+        
+
+        marker_402cdd1d63cfb79bc1caff84bb959865.bindPopup(popup_463e263a64f648dd30b498f35db9cff2)
+        ;
+
+        
+    
+    
+            marker_402cdd1d63cfb79bc1caff84bb959865.bindTooltip(
+                `<div>
+                     Day 1.2 Malahide Castle & Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_402cdd1d63cfb79bc1caff84bb959865.setIcon(icon_1443fcd7e8d990ba20f9693ee01feacf);
+            
+    
+            var marker_1817ed65e93050c523a89e9188f29c13 = L.marker(
+                [53.6947, -6.4463],
+                {
+}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            var icon_361d0410b56a3f8e6a903704c65fd5ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ab38311cd09cab44417b0c9f88b07c7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_515ef07977996c997cb3541301e98b1e = $(`<div id="html_515ef07977996c997cb3541301e98b1e" style="width: 100.0%; height: 100.0%;"><b>Day 1.3 - Brú na Bóinne Visitor Centre / Newgrange</b><br><i>Ancient site</i><br>UNESCO World Heritage landscape containing Newgrange, Knowth and Dowth. Tours depart from the visitor centre; do not drive directly to Newgrange.<br><b>Cost:</b> Check official booking page<br><b>Allow:</b> 2-2.5 hrs<br><b>Booking:</b> Essential - September tickets normally released 30 days ahead<br><a href='https://www.google.com/maps/search/?api=1&query=Br%C3%BA%20na%20B%C3%B3inne%20Visitor%20Centre%2C%20Donore%2C%20Co.%20Meath%2C%20A92%20EH5C' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_7ab38311cd09cab44417b0c9f88b07c7.setContent(html_515ef07977996c997cb3541301e98b1e);
+            
+        
+
+        marker_1817ed65e93050c523a89e9188f29c13.bindPopup(popup_7ab38311cd09cab44417b0c9f88b07c7)
+        ;
+
+        
+    
+    
+            marker_1817ed65e93050c523a89e9188f29c13.bindTooltip(
+                `<div>
+                     Day 1.3 Brú na Bóinne Visitor Centre / Newgrange
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1817ed65e93050c523a89e9188f29c13.setIcon(icon_361d0410b56a3f8e6a903704c65fd5ec);
+            
+    
+            var marker_fa21bb2b9eccfcb594ea2897062690d4 = L.marker(
+                [53.7778, -6.4174],
+                {
+}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            var icon_3f3df7888812c2d97cb48e7d4f3f2485 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e490a88df5fdf969edb95a0ec9ac447c = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_3b42186b0a6dda87d37a6044c9161a10 = $(`<div id="html_3b42186b0a6dda87d37a6044c9161a10" style="width: 100.0%; height: 100.0%;"><b>Day 1.4 - Monasterboice High Crosses</b><br><i>Monastic site</i><br>Early Christian monastic ruins noted for Muiredach's High Cross and a round tower.<br><b>Cost:</b> Free<br><b>Allow:</b> 30-40 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Monasterboice%2C%20Co.%20Louth%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_e490a88df5fdf969edb95a0ec9ac447c.setContent(html_3b42186b0a6dda87d37a6044c9161a10);
+            
+        
+
+        marker_fa21bb2b9eccfcb594ea2897062690d4.bindPopup(popup_e490a88df5fdf969edb95a0ec9ac447c)
+        ;
+
+        
+    
+    
+            marker_fa21bb2b9eccfcb594ea2897062690d4.bindTooltip(
+                `<div>
+                     Day 1.4 Monasterboice High Crosses
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa21bb2b9eccfcb594ea2897062690d4.setIcon(icon_3f3df7888812c2d97cb48e7d4f3f2485);
+            
+    
+            var marker_ec565827601c522d83a574d8878b1b58 = L.marker(
+                [54.0407, -6.1867],
+                {
+}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            var icon_6887381e0fa02daecbee047fef507c55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4060f0b5b639e71e9a1bdb35a2beba6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4047575dc077cac02a3afb9ad2412263 = $(`<div id="html_4047575dc077cac02a3afb9ad2412263" style="width: 100.0%; height: 100.0%;"><b>Day 1.5 - Carlingford</b><br><i>Town / viewpoint</i><br>Medieval coastal village beneath the Cooley Mountains, overlooking Carlingford Lough.<br><b>Cost:</b> Free to explore<br><b>Allow:</b> 60-90 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Carlingford%2C%20Co.%20Louth%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_a4060f0b5b639e71e9a1bdb35a2beba6.setContent(html_4047575dc077cac02a3afb9ad2412263);
+            
+        
+
+        marker_ec565827601c522d83a574d8878b1b58.bindPopup(popup_a4060f0b5b639e71e9a1bdb35a2beba6)
+        ;
+
+        
+    
+    
+            marker_ec565827601c522d83a574d8878b1b58.bindTooltip(
+                `<div>
+                     Day 1.5 Carlingford
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec565827601c522d83a574d8878b1b58.setIcon(icon_6887381e0fa02daecbee047fef507c55);
+            
+    
+            var marker_f999b7d871b4022e154688017b297644 = L.marker(
+                [54.0425, -6.3433],
+                {
+}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            var icon_6c36e283af72b654652a5e5a89443ff1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d8092935d2605201f4c6b8d0cc0b4da = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e950324730c26e665f1084c81f631b69 = $(`<div id="html_e950324730c26e665f1084c81f631b69" style="width: 100.0%; height: 100.0%;"><b>Day 1.6 - Ballymascanlon Hotel</b><br><i>Accommodation</i><br>Overnight accommodation.<br><b>Cost:</b> Booked separately<br><b>Allow:</b> -<br><b>Booking:</b> Confirm parking and check-in<br><a href='https://www.google.com/maps/search/?api=1&query=Ballymascanlon%20Hotel%20and%20Golf%20Resort%2C%20Dundalk%2C%20Co.%20Louth' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_9d8092935d2605201f4c6b8d0cc0b4da.setContent(html_e950324730c26e665f1084c81f631b69);
+            
+        
+
+        marker_f999b7d871b4022e154688017b297644.bindPopup(popup_9d8092935d2605201f4c6b8d0cc0b4da)
+        ;
+
+        
+    
+    
+            marker_f999b7d871b4022e154688017b297644.bindTooltip(
+                `<div>
+                     Day 1.6 Ballymascanlon Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f999b7d871b4022e154688017b297644.setIcon(icon_6c36e283af72b654652a5e5a89443ff1);
+            
+    
+            var poly_line_392b6fbaa4299f851842a25957c481d1 = L.polyline(
+                [[53.4264, -6.2499], [53.4448, -6.1642], [53.6947, -6.4463], [53.7778, -6.4174], [54.0407, -6.1867], [54.0425, -6.3433]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_181076b4e7f1eba56e4ca9512a77523c);
+        
+    
+            poly_line_392b6fbaa4299f851842a25957c481d1.bindTooltip(
+                `<div>
+                     Day 1 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_181076b4e7f1eba56e4ca9512a77523c.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_2b07ac248306003f1e4d4888522a1578 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_164f438960d1aefd3f3804fa14de9d56 = L.marker(
+                [54.0425, -6.3433],
+                {
+}
+            ).addTo(feature_group_2b07ac248306003f1e4d4888522a1578);
+        
+    
+            var icon_9b7c100f76a914c8faa58bda3b686f79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56dd6857d80c18ffed99ffabb0585a02 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_354d21565624326d9ca1bcbcdc811bf7 = $(`<div id="html_354d21565624326d9ca1bcbcdc811bf7" style="width: 100.0%; height: 100.0%;"><b>Day 2.1 - Ballymascanlon Hotel</b><br><i>Accommodation</i><br>Day-two departure point.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=Ballymascanlon%20Hotel%20and%20Golf%20Resort%2C%20Dundalk%2C%20Co.%20Louth' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_56dd6857d80c18ffed99ffabb0585a02.setContent(html_354d21565624326d9ca1bcbcdc811bf7);
+            
+        
+
+        marker_164f438960d1aefd3f3804fa14de9d56.bindPopup(popup_56dd6857d80c18ffed99ffabb0585a02)
+        ;
+
+        
+    
+    
+            marker_164f438960d1aefd3f3804fa14de9d56.bindTooltip(
+                `<div>
+                     Day 2.1 Ballymascanlon Hotel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_164f438960d1aefd3f3804fa14de9d56.setIcon(icon_9b7c100f76a914c8faa58bda3b686f79);
+            
+    
+            var marker_5d6127e93f24997fdad3637e5ad61d6c = L.marker(
+                [53.3263, -7.9861],
+                {
+}
+            ).addTo(feature_group_2b07ac248306003f1e4d4888522a1578);
+        
+    
+            var icon_508d8d65a3a44a5015c5ca771e787fad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f0138cb9e0ca05178a1a0cba3ebaa07 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a6acb6bc832ffc8317c061f6a7ac60c0 = $(`<div id="html_a6acb6bc832ffc8317c061f6a7ac60c0" style="width: 100.0%; height: 100.0%;"><b>Day 2.2 - Clonmacnoise Monastic Site</b><br><i>Monastic site</i><br>Major early Christian settlement on the River Shannon with ruined churches, round towers and high crosses. The visitor centre has recently been affected by essential works, so recheck before travelling.<br><b>Cost:</b> Adult listed at €8 when fully operating<br><b>Allow:</b> 75-105 min<br><b>Booking:</b> Recheck visitor-centre status<br><a href='https://www.google.com/maps/search/?api=1&query=Clonmacnoise%20Monastic%20Site%2C%20Shannonbridge%2C%20Co.%20Offaly' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_2f0138cb9e0ca05178a1a0cba3ebaa07.setContent(html_a6acb6bc832ffc8317c061f6a7ac60c0);
+            
+        
+
+        marker_5d6127e93f24997fdad3637e5ad61d6c.bindPopup(popup_2f0138cb9e0ca05178a1a0cba3ebaa07)
+        ;
+
+        
+    
+    
+            marker_5d6127e93f24997fdad3637e5ad61d6c.bindTooltip(
+                `<div>
+                     Day 2.2 Clonmacnoise Monastic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d6127e93f24997fdad3637e5ad61d6c.setIcon(icon_508d8d65a3a44a5015c5ca771e787fad);
+            
+    
+            var marker_a270056aac3c409c4252af98bd9b125f = L.marker(
+                [53.4235, -7.942],
+                {
+}
+            ).addTo(feature_group_2b07ac248306003f1e4d4888522a1578);
+        
+    
+            var icon_7f15a9be4f5b755bcf3690b7037e779b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee8ad85634f50bd6fc9b7242283dd41a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_e801d18181fd84f8b040888da506467a = $(`<div id="html_e801d18181fd84f8b040888da506467a" style="width: 100.0%; height: 100.0%;"><b>Day 2.3 - Athlone Castle</b><br><i>Castle / town</i><br>A compact riverside castle and museum beside the historic Shannon crossing; easy to combine with lunch.<br><b>Cost:</b> Check current admission<br><b>Allow:</b> 45-60 min optional<br><b>Booking:</b> Usually not essential<br><a href='https://www.google.com/maps/search/?api=1&query=Athlone%20Castle%20Visitor%20Centre%2C%20Castle%20Street%2C%20Athlone' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_ee8ad85634f50bd6fc9b7242283dd41a.setContent(html_e801d18181fd84f8b040888da506467a);
+            
+        
+
+        marker_a270056aac3c409c4252af98bd9b125f.bindPopup(popup_ee8ad85634f50bd6fc9b7242283dd41a)
+        ;
+
+        
+    
+    
+            marker_a270056aac3c409c4252af98bd9b125f.bindTooltip(
+                `<div>
+                     Day 2.3 Athlone Castle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a270056aac3c409c4252af98bd9b125f.setIcon(icon_7f15a9be4f5b755bcf3690b7037e779b);
+            
+    
+            var marker_ab623f4a4a0c41bf2cd1a6cf98863dac = L.marker(
+                [53.2737, -9.0612],
+                {
+}
+            ).addTo(feature_group_2b07ac248306003f1e4d4888522a1578);
+        
+    
+            var icon_0b1b5c8a0c5e5a94d38fae388601e70c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c651d5d66d4d20380abb2dba0d1f8e90 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7e770ab5ed4b3f599dc8910983cb43f1 = $(`<div id="html_7e770ab5ed4b3f599dc8910983cb43f1" style="width: 100.0%; height: 100.0%;"><b>Day 2.4 - The Sliding Rock Inn</b><br><i>Accommodation</i><br>Galway accommodation for two nights.<br><b>Cost:</b> Booked separately<br><b>Allow:</b> -<br><b>Booking:</b> Confirm parking<br><a href='https://www.google.com/maps/search/?api=1&query=The%20Sliding%20Rock%20Inn%2C%20Newcastle%20Road%2C%20Galway' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_c651d5d66d4d20380abb2dba0d1f8e90.setContent(html_7e770ab5ed4b3f599dc8910983cb43f1);
+            
+        
+
+        marker_ab623f4a4a0c41bf2cd1a6cf98863dac.bindPopup(popup_c651d5d66d4d20380abb2dba0d1f8e90)
+        ;
+
+        
+    
+    
+            marker_ab623f4a4a0c41bf2cd1a6cf98863dac.bindTooltip(
+                `<div>
+                     Day 2.4 The Sliding Rock Inn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab623f4a4a0c41bf2cd1a6cf98863dac.setIcon(icon_0b1b5c8a0c5e5a94d38fae388601e70c);
+            
+    
+            var marker_59707b15c7df93c5b75126955200d1e7 = L.marker(
+                [53.271, -9.0555],
+                {
+}
+            ).addTo(feature_group_2b07ac248306003f1e4d4888522a1578);
+        
+    
+            var icon_1c4baff7f599a241023b699d74f73bc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de6051e4dc60cb399b8ad117300fe3d6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2084aeaf764cb0c019d074dd338e1b99 = $(`<div id="html_2084aeaf764cb0c019d074dd338e1b99" style="width: 100.0%; height: 100.0%;"><b>Day 2.5 - Galway Latin Quarter</b><br><i>City walk</i><br>Pedestrian-friendly historic centre around Shop Street, Quay Street and the Spanish Arch.<br><b>Cost:</b> Free<br><b>Allow:</b> 2 hrs to evening<br><b>Booking:</b> Reserve dinner only if preferred<br><a href='https://www.google.com/maps/search/?api=1&query=Latin%20Quarter%2C%20Galway%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_de6051e4dc60cb399b8ad117300fe3d6.setContent(html_2084aeaf764cb0c019d074dd338e1b99);
+            
+        
+
+        marker_59707b15c7df93c5b75126955200d1e7.bindPopup(popup_de6051e4dc60cb399b8ad117300fe3d6)
+        ;
+
+        
+    
+    
+            marker_59707b15c7df93c5b75126955200d1e7.bindTooltip(
+                `<div>
+                     Day 2.5 Galway Latin Quarter
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59707b15c7df93c5b75126955200d1e7.setIcon(icon_1c4baff7f599a241023b699d74f73bc3);
+            
+    
+            var poly_line_1473b8332747ad97e6f2bffec5281aa7 = L.polyline(
+                [[54.0425, -6.3433], [53.3263, -7.9861], [53.4235, -7.942], [53.2737, -9.0612], [53.271, -9.0555]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_2b07ac248306003f1e4d4888522a1578);
+        
+    
+            poly_line_1473b8332747ad97e6f2bffec5281aa7.bindTooltip(
+                `<div>
+                     Day 2 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_2b07ac248306003f1e4d4888522a1578.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_34f7e5886c0ec8beb026d4727bd44bf3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d7942b8a7d60756ea3ba3174e94e54a9 = L.marker(
+                [53.2737, -9.0612],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_4123b793fdf81a0fe4d3e3a65e751df6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d167b9c8443421399c855c83c1879fa = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_001433e8b12682314541dfe302289497 = $(`<div id="html_001433e8b12682314541dfe302289497" style="width: 100.0%; height: 100.0%;"><b>Day 3.1 - The Sliding Rock Inn</b><br><i>Accommodation</i><br>Start and finish of the Connemara loop.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=The%20Sliding%20Rock%20Inn%2C%20Newcastle%20Road%2C%20Galway' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_7d167b9c8443421399c855c83c1879fa.setContent(html_001433e8b12682314541dfe302289497);
+            
+        
+
+        marker_d7942b8a7d60756ea3ba3174e94e54a9.bindPopup(popup_7d167b9c8443421399c855c83c1879fa)
+        ;
+
+        
+    
+    
+            marker_d7942b8a7d60756ea3ba3174e94e54a9.bindTooltip(
+                `<div>
+                     Day 3.1 The Sliding Rock Inn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7942b8a7d60756ea3ba3174e94e54a9.setIcon(icon_4123b793fdf81a0fe4d3e3a65e751df6);
+            
+    
+            var marker_ed42147b16b98f38e3dd364ba5ee23e2 = L.marker(
+                [53.428, -9.323],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_2a6e454704d839c3ac329d1bf114fa31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d15e80ae6ce2d80794829648e7ad431 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2c5c842279cd3fd4ffc5dcad21b25ec5 = $(`<div id="html_2c5c842279cd3fd4ffc5dcad21b25ec5" style="width: 100.0%; height: 100.0%;"><b>Day 3.2 - Oughterard</b><br><i>Town / coffee</i><br>Small gateway town on the shores of Lough Corrib; planned coffee break.<br><b>Cost:</b> Food/drink only<br><b>Allow:</b> 20 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Oughterard%2C%20Co.%20Galway%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_2d15e80ae6ce2d80794829648e7ad431.setContent(html_2c5c842279cd3fd4ffc5dcad21b25ec5);
+            
+        
+
+        marker_ed42147b16b98f38e3dd364ba5ee23e2.bindPopup(popup_2d15e80ae6ce2d80794829648e7ad431)
+        ;
+
+        
+    
+    
+            marker_ed42147b16b98f38e3dd364ba5ee23e2.bindTooltip(
+                `<div>
+                     Day 3.2 Oughterard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed42147b16b98f38e3dd364ba5ee23e2.setIcon(icon_2a6e454704d839c3ac329d1bf114fa31);
+            
+    
+            var marker_d184f755238eef318bb00ac6fc47f43b = L.marker(
+                [53.5538, -9.9486],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_e8c92fff3b313e22f1c9f1200b1cf33a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a5c93ac2a2c35ad07a83d08afbf3869 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_2f03c3afc149eb2e458fe15d1c29432e = $(`<div id="html_2f03c3afc149eb2e458fe15d1c29432e" style="width: 100.0%; height: 100.0%;"><b>Day 3.3 - Connemara National Park Visitor Centre</b><br><i>National park</i><br>Free national park with trails ranging from short lower walks to the steeper Diamond Hill circuit.<br><b>Cost:</b> Free<br><b>Allow:</b> 1.5-3 hrs<br><b>Booking:</b> No; weather dependent<br><a href='https://www.google.com/maps/search/?api=1&query=Connemara%20National%20Park%20Visitor%20Centre%2C%20Letterfrack%2C%20Co.%20Galway' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_9a5c93ac2a2c35ad07a83d08afbf3869.setContent(html_2f03c3afc149eb2e458fe15d1c29432e);
+            
+        
+
+        marker_d184f755238eef318bb00ac6fc47f43b.bindPopup(popup_9a5c93ac2a2c35ad07a83d08afbf3869)
+        ;
+
+        
+    
+    
+            marker_d184f755238eef318bb00ac6fc47f43b.bindTooltip(
+                `<div>
+                     Day 3.3 Connemara National Park Visitor Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d184f755238eef318bb00ac6fc47f43b.setIcon(icon_e8c92fff3b313e22f1c9f1200b1cf33a);
+            
+    
+            var marker_efd8f5256dcf4151e38db2f8198c7575 = L.marker(
+                [53.5618, -9.8899],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_37e7c8c2ba55e00cfd5cd7848e57a159 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d58da39293f000201351d649471d17a8 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ff2ba02b673476df53ef77ad8d0df8e8 = $(`<div id="html_ff2ba02b673476df53ef77ad8d0df8e8" style="width: 100.0%; height: 100.0%;"><b>Day 3.4 - Kylemore Abbey & Victorian Walled Garden</b><br><i>Abbey / garden</i><br>Victorian lakeside castle, Benedictine abbey, neo-Gothic church and restored walled garden.<br><b>Cost:</b> Check current online rate<br><b>Allow:</b> 2-3 hrs<br><b>Booking:</b> Recommended<br><a href='https://www.google.com/maps/search/?api=1&query=Kylemore%20Abbey%2C%20Connemara%2C%20Co.%20Galway%2C%20H91%20VR90' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_d58da39293f000201351d649471d17a8.setContent(html_ff2ba02b673476df53ef77ad8d0df8e8);
+            
+        
+
+        marker_efd8f5256dcf4151e38db2f8198c7575.bindPopup(popup_d58da39293f000201351d649471d17a8)
+        ;
+
+        
+    
+    
+            marker_efd8f5256dcf4151e38db2f8198c7575.bindTooltip(
+                `<div>
+                     Day 3.4 Kylemore Abbey & Victorian Walled Garden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efd8f5256dcf4151e38db2f8198c7575.setIcon(icon_37e7c8c2ba55e00cfd5cd7848e57a159);
+            
+    
+            var marker_f80014dd221daf626c60e77cb74ea4ec = L.marker(
+                [53.4889, -10.019],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_2b99937d44c1ea01a295be40191ac9fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02762e11dd24e987f32c52741f3468b7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_550eee7bc208652e61229410b545a5af = $(`<div id="html_550eee7bc208652e61229410b545a5af" style="width: 100.0%; height: 100.0%;"><b>Day 3.5 - Clifden</b><br><i>Town</i><br>Colourful market town often described as the capital of Connemara.<br><b>Cost:</b> Free to explore<br><b>Allow:</b> 45-60 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Clifden%2C%20Co.%20Galway%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_02762e11dd24e987f32c52741f3468b7.setContent(html_550eee7bc208652e61229410b545a5af);
+            
+        
+
+        marker_f80014dd221daf626c60e77cb74ea4ec.bindPopup(popup_02762e11dd24e987f32c52741f3468b7)
+        ;
+
+        
+    
+    
+            marker_f80014dd221daf626c60e77cb74ea4ec.bindTooltip(
+                `<div>
+                     Day 3.5 Clifden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f80014dd221daf626c60e77cb74ea4ec.setIcon(icon_2b99937d44c1ea01a295be40191ac9fb);
+            
+    
+            var marker_75dbb02d6147d9e775d381b4851fb31e = L.marker(
+                [53.5082, -10.0979],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_db8c95a076838cfe5788370508cdabcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_205296923d72f9acc670cbdd19169bfb = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9a22784659628cfce09fb370d9778100 = $(`<div id="html_9a22784659628cfce09fb370d9778100" style="width: 100.0%; height: 100.0%;"><b>Day 3.6 - Sky Road Upper Viewpoint</b><br><i>Viewpoint</i><br>High-level viewpoint across the Atlantic islands and the Connemara coast.<br><b>Cost:</b> Free<br><b>Allow:</b> 20-40 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Sky%20Road%20Wild%20Atlantic%20View%20Point%2C%20Clifden%2C%20Co.%20Galway' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_205296923d72f9acc670cbdd19169bfb.setContent(html_9a22784659628cfce09fb370d9778100);
+            
+        
+
+        marker_75dbb02d6147d9e775d381b4851fb31e.bindPopup(popup_205296923d72f9acc670cbdd19169bfb)
+        ;
+
+        
+    
+    
+            marker_75dbb02d6147d9e775d381b4851fb31e.bindTooltip(
+                `<div>
+                     Day 3.6 Sky Road Upper Viewpoint
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75dbb02d6147d9e775d381b4851fb31e.setIcon(icon_db8c95a076838cfe5788370508cdabcf);
+            
+    
+            var marker_6c1d6e2c145d8d4a06523a23ec4f12e4 = L.marker(
+                [53.2737, -9.0612],
+                {
+}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            var icon_3a308969b61f30238fe21ea4af806c0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cc5d525fd2c860fe3cc637392ffbdb6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_342ed61e315f5ad26ecd33c944562b5a = $(`<div id="html_342ed61e315f5ad26ecd33c944562b5a" style="width: 100.0%; height: 100.0%;"><b>Day 3.7 - The Sliding Rock Inn</b><br><i>Accommodation</i><br>Return to Galway.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=The%20Sliding%20Rock%20Inn%2C%20Newcastle%20Road%2C%20Galway' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_4cc5d525fd2c860fe3cc637392ffbdb6.setContent(html_342ed61e315f5ad26ecd33c944562b5a);
+            
+        
+
+        marker_6c1d6e2c145d8d4a06523a23ec4f12e4.bindPopup(popup_4cc5d525fd2c860fe3cc637392ffbdb6)
+        ;
+
+        
+    
+    
+            marker_6c1d6e2c145d8d4a06523a23ec4f12e4.bindTooltip(
+                `<div>
+                     Day 3.7 The Sliding Rock Inn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c1d6e2c145d8d4a06523a23ec4f12e4.setIcon(icon_3a308969b61f30238fe21ea4af806c0f);
+            
+    
+            var poly_line_ecccead165c24fc86e15e7e4b575f85a = L.polyline(
+                [[53.2737, -9.0612], [53.428, -9.323], [53.5538, -9.9486], [53.5618, -9.8899], [53.4889, -10.019], [53.5082, -10.0979], [53.2737, -9.0612]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_34f7e5886c0ec8beb026d4727bd44bf3);
+        
+    
+            poly_line_ecccead165c24fc86e15e7e4b575f85a.bindTooltip(
+                `<div>
+                     Day 3 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_34f7e5886c0ec8beb026d4727bd44bf3.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_fd244d0537932577b68dabddcc6a7161 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_662f56eef7d081c9f37fb97dcf6f3ceb = L.marker(
+                [53.2737, -9.0612],
+                {
+}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            var icon_6fd548b3953c87432a6fd0fe929ce074 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6559f90ab60207767ebc61719c306705 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_9d559185ec7bfe91de8d1a3c215c940d = $(`<div id="html_9d559185ec7bfe91de8d1a3c215c940d" style="width: 100.0%; height: 100.0%;"><b>Day 4.1 - The Sliding Rock Inn</b><br><i>Accommodation</i><br>Departure point.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=The%20Sliding%20Rock%20Inn%2C%20Newcastle%20Road%2C%20Galway' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_6559f90ab60207767ebc61719c306705.setContent(html_9d559185ec7bfe91de8d1a3c215c940d);
+            
+        
+
+        marker_662f56eef7d081c9f37fb97dcf6f3ceb.bindPopup(popup_6559f90ab60207767ebc61719c306705)
+        ;
+
+        
+    
+    
+            marker_662f56eef7d081c9f37fb97dcf6f3ceb.bindTooltip(
+                `<div>
+                     Day 4.1 The Sliding Rock Inn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_662f56eef7d081c9f37fb97dcf6f3ceb.setIcon(icon_6fd548b3953c87432a6fd0fe929ce074);
+            
+    
+            var marker_4b855a00af63830ef84e612305d69113 = L.marker(
+                [52.9719, -9.4265],
+                {
+}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            var icon_08cceb662a7042ee12b6d0d6c0cea240 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bacd5bcbb4bb9edeadc9edc0fc6051e2 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_580df5315665ab058be81f956e9d0db4 = $(`<div id="html_580df5315665ab058be81f956e9d0db4" style="width: 100.0%; height: 100.0%;"><b>Day 4.2 - Cliffs of Moher Experience</b><br><i>Cliffs / visitor centre</i><br>Ireland's best-known sea cliffs, with paved viewing areas, exhibition and parking included in the visitor-experience ticket.<br><b>Cost:</b> Dynamic/time-based; check online<br><b>Allow:</b> 2-2.5 hrs<br><b>Booking:</b> Recommended; September hours listed as 08:00-19:00<br><a href='https://www.google.com/maps/search/?api=1&query=Cliffs%20of%20Moher%20Experience%2C%20Liscannor%2C%20Co.%20Clare%2C%20V95%20KN9T' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_bacd5bcbb4bb9edeadc9edc0fc6051e2.setContent(html_580df5315665ab058be81f956e9d0db4);
+            
+        
+
+        marker_4b855a00af63830ef84e612305d69113.bindPopup(popup_bacd5bcbb4bb9edeadc9edc0fc6051e2)
+        ;
+
+        
+    
+    
+            marker_4b855a00af63830ef84e612305d69113.bindTooltip(
+                `<div>
+                     Day 4.2 Cliffs of Moher Experience
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b855a00af63830ef84e612305d69113.setIcon(icon_08cceb662a7042ee12b6d0d6c0cea240);
+            
+    
+            var marker_8f329f6e11c4e4fe7ea72516b7ea3bb1 = L.marker(
+                [53.0151, -9.3774],
+                {
+}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            var icon_8c8d71674b5a8bdc7175996b9f064e83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ca4fde9666fe9671269508f1ed20657 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8ad7fa5933bceda21721b86326a59e5d = $(`<div id="html_8ad7fa5933bceda21721b86326a59e5d" style="width: 100.0%; height: 100.0%;"><b>Day 4.3 - Doolin</b><br><i>Village / lunch</i><br>Small coastal village known for traditional music and ferries to the Aran Islands.<br><b>Cost:</b> Free to explore<br><b>Allow:</b> 60 min<br><b>Booking:</b> Lunch booking optional<br><a href='https://www.google.com/maps/search/?api=1&query=Doolin%2C%20Co.%20Clare%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_5ca4fde9666fe9671269508f1ed20657.setContent(html_8ad7fa5933bceda21721b86326a59e5d);
+            
+        
+
+        marker_8f329f6e11c4e4fe7ea72516b7ea3bb1.bindPopup(popup_5ca4fde9666fe9671269508f1ed20657)
+        ;
+
+        
+    
+    
+            marker_8f329f6e11c4e4fe7ea72516b7ea3bb1.bindTooltip(
+                `<div>
+                     Day 4.3 Doolin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f329f6e11c4e4fe7ea72516b7ea3bb1.setIcon(icon_8c8d71674b5a8bdc7175996b9f064e83);
+            
+    
+            var marker_027de3b25bca8ea7110e1f164ce1f640 = L.marker(
+                [53.0486, -9.1405],
+                {
+}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            var icon_c0e4b30dd11338d9e9afc50bfbc2bac7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_284fba85126830bdeb000b9f6e2f947d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6aeb6334c3e4e7d8d1512c4c69973e1d = $(`<div id="html_6aeb6334c3e4e7d8d1512c4c69973e1d" style="width: 100.0%; height: 100.0%;"><b>Day 4.4 - Poulnabrone Dolmen</b><br><i>Ancient site</i><br>Neolithic portal tomb set within the limestone pavement of the Burren; a useful short scenic stop.<br><b>Cost:</b> Free<br><b>Allow:</b> 20-30 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Poulnabrone%20Dolmen%2C%20Co.%20Clare%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_284fba85126830bdeb000b9f6e2f947d.setContent(html_6aeb6334c3e4e7d8d1512c4c69973e1d);
+            
+        
+
+        marker_027de3b25bca8ea7110e1f164ce1f640.bindPopup(popup_284fba85126830bdeb000b9f6e2f947d)
+        ;
+
+        
+    
+    
+            marker_027de3b25bca8ea7110e1f164ce1f640.bindTooltip(
+                `<div>
+                     Day 4.4 Poulnabrone Dolmen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_027de3b25bca8ea7110e1f164ce1f640.setIcon(icon_c0e4b30dd11338d9e9afc50bfbc2bac7);
+            
+    
+            var marker_45d795514754509144fbe547b3e3098a = L.marker(
+                [52.564, -8.7907],
+                {
+}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            var icon_cac57c730912bde63034aa541c6d1c79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8bed832298c50222589a818b44abca46 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_010605b48de29c201268d93fe9b33084 = $(`<div id="html_010605b48de29c201268d93fe9b33084" style="width: 100.0%; height: 100.0%;"><b>Day 4.5 - Adare</b><br><i>Village</i><br>Historic village known for thatched cottages, stone buildings and riverside remains.<br><b>Cost:</b> Free to explore<br><b>Allow:</b> 45-60 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Adare%2C%20Co.%20Limerick%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_8bed832298c50222589a818b44abca46.setContent(html_010605b48de29c201268d93fe9b33084);
+            
+        
+
+        marker_45d795514754509144fbe547b3e3098a.bindPopup(popup_8bed832298c50222589a818b44abca46)
+        ;
+
+        
+    
+    
+            marker_45d795514754509144fbe547b3e3098a.bindTooltip(
+                `<div>
+                     Day 4.5 Adare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45d795514754509144fbe547b3e3098a.setIcon(icon_cac57c730912bde63034aa541c6d1c79);
+            
+    
+            var marker_084287ec87ae67b9e49ca4c1e6a6eb5a = L.marker(
+                [52.0598, -9.507],
+                {
+}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            var icon_dd4c2eadcc0cfaf45a2af7503773976d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e107e778d240ad7e97548acb422ad693 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_36baeae14b3e9c1a2851d250f42bd88a = $(`<div id="html_36baeae14b3e9c1a2851d250f42bd88a" style="width: 100.0%; height: 100.0%;"><b>Day 4.6 - Foley's Townhouse, Killarney</b><br><i>Accommodation</i><br>Killarney accommodation for two nights.<br><b>Cost:</b> Booked separately<br><b>Allow:</b> -<br><b>Booking:</b> Confirm parking arrangements<br><a href='https://www.google.com/maps/search/?api=1&query=Foley%27s%20Townhouse%2C%20High%20Street%2C%20Killarney%2C%20Co.%20Kerry' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_e107e778d240ad7e97548acb422ad693.setContent(html_36baeae14b3e9c1a2851d250f42bd88a);
+            
+        
+
+        marker_084287ec87ae67b9e49ca4c1e6a6eb5a.bindPopup(popup_e107e778d240ad7e97548acb422ad693)
+        ;
+
+        
+    
+    
+            marker_084287ec87ae67b9e49ca4c1e6a6eb5a.bindTooltip(
+                `<div>
+                     Day 4.6 Foley's Townhouse, Killarney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_084287ec87ae67b9e49ca4c1e6a6eb5a.setIcon(icon_dd4c2eadcc0cfaf45a2af7503773976d);
+            
+    
+            var poly_line_0817809bea1ce3cc04ae22275affa815 = L.polyline(
+                [[53.2737, -9.0612], [52.9719, -9.4265], [53.0151, -9.3774], [53.0486, -9.1405], [52.564, -8.7907], [52.0598, -9.507]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_fd244d0537932577b68dabddcc6a7161);
+        
+    
+            poly_line_0817809bea1ce3cc04ae22275affa815.bindTooltip(
+                `<div>
+                     Day 4 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_fd244d0537932577b68dabddcc6a7161.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_47bf16793e5016afddbcc56ed795e174 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_02beafa65e1ef79eb2fd21c9ecb2a313 = L.marker(
+                [52.0598, -9.507],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_ca9658369dfc0ab61aad086ebe006dac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_336a20e9237d1e36f89df7d086db5347 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_ddbf2d509b24fefaf07011882ea33911 = $(`<div id="html_ddbf2d509b24fefaf07011882ea33911" style="width: 100.0%; height: 100.0%;"><b>Day 5.1 - Foley's Townhouse, Killarney</b><br><i>Accommodation</i><br>Start and finish of the Ring of Kerry day.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=Foley%27s%20Townhouse%2C%20High%20Street%2C%20Killarney%2C%20Co.%20Kerry' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_336a20e9237d1e36f89df7d086db5347.setContent(html_ddbf2d509b24fefaf07011882ea33911);
+            
+        
+
+        marker_02beafa65e1ef79eb2fd21c9ecb2a313.bindPopup(popup_336a20e9237d1e36f89df7d086db5347)
+        ;
+
+        
+    
+    
+            marker_02beafa65e1ef79eb2fd21c9ecb2a313.bindTooltip(
+                `<div>
+                     Day 5.1 Foley's Townhouse, Killarney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02beafa65e1ef79eb2fd21c9ecb2a313.setIcon(icon_ca9658369dfc0ab61aad086ebe006dac);
+            
+    
+            var marker_a216baf68e3a6b94d28892b18ac4051f = L.marker(
+                [51.9685, -9.5903],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_6998bd65b3dc865e7e7382aea27a0c75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_326d5d0c9f413b0b5a3219addfb1e68d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_f0f38468c9bd4fbf192b5c5fdb4ef6af = $(`<div id="html_f0f38468c9bd4fbf192b5c5fdb4ef6af" style="width: 100.0%; height: 100.0%;"><b>Day 5.2 - Ladies View</b><br><i>Viewpoint</i><br>Classic elevated view across the Lakes of Killarney.<br><b>Cost:</b> Free<br><b>Allow:</b> 15-25 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Ladies%20View%2C%20Killarney%20National%20Park%2C%20Co.%20Kerry' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_326d5d0c9f413b0b5a3219addfb1e68d.setContent(html_f0f38468c9bd4fbf192b5c5fdb4ef6af);
+            
+        
+
+        marker_a216baf68e3a6b94d28892b18ac4051f.bindPopup(popup_326d5d0c9f413b0b5a3219addfb1e68d)
+        ;
+
+        
+    
+    
+            marker_a216baf68e3a6b94d28892b18ac4051f.bindTooltip(
+                `<div>
+                     Day 5.2 Ladies View
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a216baf68e3a6b94d28892b18ac4051f.setIcon(icon_6998bd65b3dc865e7e7382aea27a0c75);
+            
+    
+            var marker_90778d1f5f4a7b1d97b86e4ef5d06078 = L.marker(
+                [51.9389, -9.6552],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_7b459b185c2d044b77d0f7b461d06301 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa0f425f8282eb24a5e6f65c485b41dc = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_370afac8f39c68df1f9705f1b44ba3f0 = $(`<div id="html_370afac8f39c68df1f9705f1b44ba3f0" style="width: 100.0%; height: 100.0%;"><b>Day 5.3 - Moll's Gap</b><br><i>Mountain pass</i><br>Mountain pass with views over the MacGillycuddy's Reeks and surrounding valleys.<br><b>Cost:</b> Free<br><b>Allow:</b> 15-25 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Moll%27s%20Gap%2C%20Co.%20Kerry%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_aa0f425f8282eb24a5e6f65c485b41dc.setContent(html_370afac8f39c68df1f9705f1b44ba3f0);
+            
+        
+
+        marker_90778d1f5f4a7b1d97b86e4ef5d06078.bindPopup(popup_aa0f425f8282eb24a5e6f65c485b41dc)
+        ;
+
+        
+    
+    
+            marker_90778d1f5f4a7b1d97b86e4ef5d06078.bindTooltip(
+                `<div>
+                     Day 5.3 Moll's Gap
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90778d1f5f4a7b1d97b86e4ef5d06078.setIcon(icon_7b459b185c2d044b77d0f7b461d06301);
+            
+    
+            var marker_9458271c9279541d2b517e6dea97bde4 = L.marker(
+                [51.88, -9.583],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_60344a6a39afced6f96a420bbf988c04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4227721f76fb47c80272fdc93797570a = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_8b4d6cafc4520f8812f7949608c7b120 = $(`<div id="html_8b4d6cafc4520f8812f7949608c7b120" style="width: 100.0%; height: 100.0%;"><b>Day 5.4 - Kenmare</b><br><i>Town</i><br>Attractive heritage town at the head of Kenmare Bay.<br><b>Cost:</b> Free to explore<br><b>Allow:</b> 45-60 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Kenmare%2C%20Co.%20Kerry%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_4227721f76fb47c80272fdc93797570a.setContent(html_8b4d6cafc4520f8812f7949608c7b120);
+            
+        
+
+        marker_9458271c9279541d2b517e6dea97bde4.bindPopup(popup_4227721f76fb47c80272fdc93797570a)
+        ;
+
+        
+    
+    
+            marker_9458271c9279541d2b517e6dea97bde4.bindTooltip(
+                `<div>
+                     Day 5.4 Kenmare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9458271c9279541d2b517e6dea97bde4.setIcon(icon_60344a6a39afced6f96a420bbf988c04);
+            
+    
+            var marker_8e537fda8e8185c75d0477d187177e44 = L.marker(
+                [51.8377, -9.8983],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_64337ec880b1e3448416552543602905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87294df0001787aaca59d093d853c01b = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_b59ea152eebb9d20a5db97014abf5c1c = $(`<div id="html_b59ea152eebb9d20a5db97014abf5c1c" style="width: 100.0%; height: 100.0%;"><b>Day 5.5 - Sneem</b><br><i>Village</i><br>Colourful village split by the River Sneem, with small squares and riverside walks.<br><b>Cost:</b> Free<br><b>Allow:</b> 30-45 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Sneem%2C%20Co.%20Kerry%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_87294df0001787aaca59d093d853c01b.setContent(html_b59ea152eebb9d20a5db97014abf5c1c);
+            
+        
+
+        marker_8e537fda8e8185c75d0477d187177e44.bindPopup(popup_87294df0001787aaca59d093d853c01b)
+        ;
+
+        
+    
+    
+            marker_8e537fda8e8185c75d0477d187177e44.bindTooltip(
+                `<div>
+                     Day 5.5 Sneem
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e537fda8e8185c75d0477d187177e44.setIcon(icon_64337ec880b1e3448416552543602905);
+            
+    
+            var marker_fe3b0f9ead4f918945ec1c0df92ac1ac = L.marker(
+                [51.8288, -10.1716],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_fad73e50312db336e8fca1cd4a177bb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5052d348fd22f6b194242209e44c4eb1 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_35ec2859de88f2c211022636cb7df36c = $(`<div id="html_35ec2859de88f2c211022636cb7df36c" style="width: 100.0%; height: 100.0%;"><b>Day 5.6 - Waterville</b><br><i>Coastal stop</i><br>Atlantic-facing village on the Iveragh Peninsula, suitable for lunch and a seafront walk.<br><b>Cost:</b> Free to explore<br><b>Allow:</b> 60 min<br><b>Booking:</b> Lunch booking optional<br><a href='https://www.google.com/maps/search/?api=1&query=Waterville%2C%20Co.%20Kerry%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_5052d348fd22f6b194242209e44c4eb1.setContent(html_35ec2859de88f2c211022636cb7df36c);
+            
+        
+
+        marker_fe3b0f9ead4f918945ec1c0df92ac1ac.bindPopup(popup_5052d348fd22f6b194242209e44c4eb1)
+        ;
+
+        
+    
+    
+            marker_fe3b0f9ead4f918945ec1c0df92ac1ac.bindTooltip(
+                `<div>
+                     Day 5.6 Waterville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe3b0f9ead4f918945ec1c0df92ac1ac.setIcon(icon_fad73e50312db336e8fca1cd4a177bb6);
+            
+    
+            var marker_c2732b47c13a3760ca5a37e0eb228e75 = L.marker(
+                [51.7695, -10.1283],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_561a732e8879db017bd6e43feccee8f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eca94bb4509e57f5396b226068263f38 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_6850af696775d591e7f1fcb772a3299a = $(`<div id="html_6850af696775d591e7f1fcb772a3299a" style="width: 100.0%; height: 100.0%;"><b>Day 5.7 - Derrynane Beach</b><br><i>Beach / viewpoint</i><br>Sheltered sandy beach and coastal landscape near Derrynane National Historic Park.<br><b>Cost:</b> Free; parking may apply<br><b>Allow:</b> 30-60 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Derrynane%20Beach%2C%20Caherdaniel%2C%20Co.%20Kerry' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_eca94bb4509e57f5396b226068263f38.setContent(html_6850af696775d591e7f1fcb772a3299a);
+            
+        
+
+        marker_c2732b47c13a3760ca5a37e0eb228e75.bindPopup(popup_eca94bb4509e57f5396b226068263f38)
+        ;
+
+        
+    
+    
+            marker_c2732b47c13a3760ca5a37e0eb228e75.bindTooltip(
+                `<div>
+                     Day 5.7 Derrynane Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c2732b47c13a3760ca5a37e0eb228e75.setIcon(icon_561a732e8879db017bd6e43feccee8f2);
+            
+    
+            var marker_39cf9223af8fb8ccb6fffad2ba28adec = L.marker(
+                [51.9488, -10.2229],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_6f7f739764bc51af8c6d12dda4b80b68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_961b551d8c7b0c13b827422f06aee957 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_7f60b44a2b64a988570983025bfff5b7 = $(`<div id="html_7f60b44a2b64a988570983025bfff5b7" style="width: 100.0%; height: 100.0%;"><b>Day 5.8 - Cahersiveen</b><br><i>Town / viewpoint</i><br>Optional west-coast stop and gateway to Skellig Coast viewpoints.<br><b>Cost:</b> Free<br><b>Allow:</b> 20-40 min<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Cahersiveen%2C%20Co.%20Kerry%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_961b551d8c7b0c13b827422f06aee957.setContent(html_7f60b44a2b64a988570983025bfff5b7);
+            
+        
+
+        marker_39cf9223af8fb8ccb6fffad2ba28adec.bindPopup(popup_961b551d8c7b0c13b827422f06aee957)
+        ;
+
+        
+    
+    
+            marker_39cf9223af8fb8ccb6fffad2ba28adec.bindTooltip(
+                `<div>
+                     Day 5.8 Cahersiveen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_39cf9223af8fb8ccb6fffad2ba28adec.setIcon(icon_6f7f739764bc51af8c6d12dda4b80b68);
+            
+    
+            var marker_7dc3a5f8b528c78d7a91cbfc5b0348b0 = L.marker(
+                [52.0598, -9.507],
+                {
+}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            var icon_2716739fa08a59f2a02ebabbfb9270c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8de07ac5c02a4c5c31dd4c99800771c4 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a2a00734098d785f341465d35d6467ba = $(`<div id="html_a2a00734098d785f341465d35d6467ba" style="width: 100.0%; height: 100.0%;"><b>Day 5.9 - Foley's Townhouse, Killarney</b><br><i>Accommodation</i><br>Return to Killarney.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=Foley%27s%20Townhouse%2C%20High%20Street%2C%20Killarney%2C%20Co.%20Kerry' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_8de07ac5c02a4c5c31dd4c99800771c4.setContent(html_a2a00734098d785f341465d35d6467ba);
+            
+        
+
+        marker_7dc3a5f8b528c78d7a91cbfc5b0348b0.bindPopup(popup_8de07ac5c02a4c5c31dd4c99800771c4)
+        ;
+
+        
+    
+    
+            marker_7dc3a5f8b528c78d7a91cbfc5b0348b0.bindTooltip(
+                `<div>
+                     Day 5.9 Foley's Townhouse, Killarney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7dc3a5f8b528c78d7a91cbfc5b0348b0.setIcon(icon_2716739fa08a59f2a02ebabbfb9270c4);
+            
+    
+            var poly_line_8df29a3cd2a9d89400fa965f90b2fd9b = L.polyline(
+                [[52.0598, -9.507], [51.9685, -9.5903], [51.9389, -9.6552], [51.88, -9.583], [51.8377, -9.8983], [51.8288, -10.1716], [51.7695, -10.1283], [51.9488, -10.2229], [52.0598, -9.507]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_47bf16793e5016afddbcc56ed795e174);
+        
+    
+            poly_line_8df29a3cd2a9d89400fa965f90b2fd9b.bindTooltip(
+                `<div>
+                     Day 5 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_47bf16793e5016afddbcc56ed795e174.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_f4f969321812813ccbf009c243bebba7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_282a44f9d6e6419764dc14e7bb1b9a74 = L.marker(
+                [52.0598, -9.507],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_e1ee0cb4cb8ff15db64fd5ad73f982ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c88892f56f615496d35c2a0bd2195a41 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_df2d0134b321d8be02e09e00d85e7048 = $(`<div id="html_df2d0134b321d8be02e09e00d85e7048" style="width: 100.0%; height: 100.0%;"><b>Day 6.1 - Foley's Townhouse, Killarney</b><br><i>Accommodation</i><br>Departure point.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=Foley%27s%20Townhouse%2C%20High%20Street%2C%20Killarney%2C%20Co.%20Kerry' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_c88892f56f615496d35c2a0bd2195a41.setContent(html_df2d0134b321d8be02e09e00d85e7048);
+            
+        
+
+        marker_282a44f9d6e6419764dc14e7bb1b9a74.bindPopup(popup_c88892f56f615496d35c2a0bd2195a41)
+        ;
+
+        
+    
+    
+            marker_282a44f9d6e6419764dc14e7bb1b9a74.bindTooltip(
+                `<div>
+                     Day 6.1 Foley's Townhouse, Killarney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_282a44f9d6e6419764dc14e7bb1b9a74.setIcon(icon_e1ee0cb4cb8ff15db64fd5ad73f982ed);
+            
+    
+            var marker_49eeaea83c4aeedc877c48bb7bafdafe = L.marker(
+                [52.5201, -7.8905],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_9714c135bd783ee0aabc53d0f97b1512 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43d4f2665cd8a541b24d6978b059177d = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_52d83b789a6a69669271f6d5008c979f = $(`<div id="html_52d83b789a6a69669271f6d5008c979f" style="width: 100.0%; height: 100.0%;"><b>Day 6.2 - Rock of Cashel</b><br><i>Medieval site</i><br>Hilltop medieval complex containing a round tower, Gothic cathedral and Cormac's Chapel.<br><b>Cost:</b> Adult €8; family €20 listed<br><b>Allow:</b> 1-1.5 hrs<br><b>Booking:</b> Check Cormac's Chapel tour availability<br><a href='https://www.google.com/maps/search/?api=1&query=Rock%20of%20Cashel%2C%20St%20Patrick%27s%20Rock%2C%20Cashel%2C%20Co.%20Tipperary%2C%20E25%20KX44' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_43d4f2665cd8a541b24d6978b059177d.setContent(html_52d83b789a6a69669271f6d5008c979f);
+            
+        
+
+        marker_49eeaea83c4aeedc877c48bb7bafdafe.bindPopup(popup_43d4f2665cd8a541b24d6978b059177d)
+        ;
+
+        
+    
+    
+            marker_49eeaea83c4aeedc877c48bb7bafdafe.bindTooltip(
+                `<div>
+                     Day 6.2 Rock of Cashel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49eeaea83c4aeedc877c48bb7bafdafe.setIcon(icon_9714c135bd783ee0aabc53d0f97b1512);
+            
+    
+            var marker_0d110f978642e30e342635424f7168c9 = L.marker(
+                [52.3758, -7.9256],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_f9eca5d18fd5e80bdfc7d947cec51c59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fba37ab8c28b28e9379c4f1f822505c9 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_50c4ef29b8d7867173c29f4e8897c913 = $(`<div id="html_50c4ef29b8d7867173c29f4e8897c913" style="width: 100.0%; height: 100.0%;"><b>Day 6.3 - Cahir Castle</b><br><i>Castle</i><br>Large, well-preserved medieval castle occupying a rocky island in the River Suir.<br><b>Cost:</b> Check official rate<br><b>Allow:</b> 60-75 min<br><b>Booking:</b> Usually not essential<br><a href='https://www.google.com/maps/search/?api=1&query=Cahir%20Castle%2C%20Castle%20Street%2C%20Cahir%2C%20Co.%20Tipperary%2C%20E21%20P652' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_fba37ab8c28b28e9379c4f1f822505c9.setContent(html_50c4ef29b8d7867173c29f4e8897c913);
+            
+        
+
+        marker_0d110f978642e30e342635424f7168c9.bindPopup(popup_fba37ab8c28b28e9379c4f1f822505c9)
+        ;
+
+        
+    
+    
+            marker_0d110f978642e30e342635424f7168c9.bindTooltip(
+                `<div>
+                     Day 6.3 Cahir Castle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d110f978642e30e342635424f7168c9.setIcon(icon_f9eca5d18fd5e80bdfc7d947cec51c59);
+            
+    
+            var marker_b9a06b4ea533a3572e2a0bd0df5440be = L.marker(
+                [52.6545, -7.2523],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_d371de2b28b6ca7104e3f16d52c98b48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6ecc3e15230eff6bdbf74ecfc28ef47 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_431d9f252ac0968507d8a983dedf9ba2 = $(`<div id="html_431d9f252ac0968507d8a983dedf9ba2" style="width: 100.0%; height: 100.0%;"><b>Day 6.4 - JB's Bar & Guest House</b><br><i>Accommodation</i><br>Kilkenny accommodation.<br><b>Cost:</b> Booked separately<br><b>Allow:</b> -<br><b>Booking:</b> Confirm parking<br><a href='https://www.google.com/maps/search/?api=1&query=JB%27s%20Bar%20and%20Guesthouse%2C%20Kilkenny%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_b6ecc3e15230eff6bdbf74ecfc28ef47.setContent(html_431d9f252ac0968507d8a983dedf9ba2);
+            
+        
+
+        marker_b9a06b4ea533a3572e2a0bd0df5440be.bindPopup(popup_b6ecc3e15230eff6bdbf74ecfc28ef47)
+        ;
+
+        
+    
+    
+            marker_b9a06b4ea533a3572e2a0bd0df5440be.bindTooltip(
+                `<div>
+                     Day 6.4 JB's Bar & Guest House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9a06b4ea533a3572e2a0bd0df5440be.setIcon(icon_d371de2b28b6ca7104e3f16d52c98b48);
+            
+    
+            var marker_f93657c0374c40405d64afc81406ae15 = L.marker(
+                [52.6506, -7.2494],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_ed6f09fefa772e37b07ee9319168bfe6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46464824f94638a633b8163f133a4311 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_4efd8220608f00d281e910808d91736a = $(`<div id="html_4efd8220608f00d281e910808d91736a" style="width: 100.0%; height: 100.0%;"><b>Day 6.5 - Kilkenny Castle</b><br><i>Castle</i><br>Former Butler family residence overlooking the River Nore; the extensive park is free.<br><b>Cost:</b> Check current castle admission; park free<br><b>Allow:</b> 60-90 min<br><b>Booking:</b> Optional online booking<br><a href='https://www.google.com/maps/search/?api=1&query=Kilkenny%20Castle%2C%20The%20Parade%2C%20Kilkenny%2C%20R95%20YRK1' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_46464824f94638a633b8163f133a4311.setContent(html_4efd8220608f00d281e910808d91736a);
+            
+        
+
+        marker_f93657c0374c40405d64afc81406ae15.bindPopup(popup_46464824f94638a633b8163f133a4311)
+        ;
+
+        
+    
+    
+            marker_f93657c0374c40405d64afc81406ae15.bindTooltip(
+                `<div>
+                     Day 6.5 Kilkenny Castle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f93657c0374c40405d64afc81406ae15.setIcon(icon_ed6f09fefa772e37b07ee9319168bfe6);
+            
+    
+            var marker_cfe2dcc1d76baeefe106f01b000e1b7f = L.marker(
+                [52.6534, -7.2524],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_b0f925b39c8ee107b8f384f57708b8f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb3a2ac603a2f08cf60f14de21d722c3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_1f7e925aa9e7b7cf6ba4c26befb11d0b = $(`<div id="html_1f7e925aa9e7b7cf6ba4c26befb11d0b" style="width: 100.0%; height: 100.0%;"><b>Day 6.6 - Medieval Mile</b><br><i>City walk</i><br>Walkable historic spine linking Kilkenny Castle with St Canice's Cathedral.<br><b>Cost:</b> Free to walk<br><b>Allow:</b> 1-2 hrs<br><b>Booking:</b> No<br><a href='https://www.google.com/maps/search/?api=1&query=Medieval%20Mile%2C%20Kilkenny%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_eb3a2ac603a2f08cf60f14de21d722c3.setContent(html_1f7e925aa9e7b7cf6ba4c26befb11d0b);
+            
+        
+
+        marker_cfe2dcc1d76baeefe106f01b000e1b7f.bindPopup(popup_eb3a2ac603a2f08cf60f14de21d722c3)
+        ;
+
+        
+    
+    
+            marker_cfe2dcc1d76baeefe106f01b000e1b7f.bindTooltip(
+                `<div>
+                     Day 6.6 Medieval Mile
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfe2dcc1d76baeefe106f01b000e1b7f.setIcon(icon_b0f925b39c8ee107b8f384f57708b8f6);
+            
+    
+            var marker_5d7a702bb4574f55d0f47b017e8630df = L.marker(
+                [52.6532, -7.253],
+                {
+}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            var icon_2daa8a423e05c9bd47c9ebdd2d0694cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ed002177d719a11c40ff352ddd717e7 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a14cf53780e0b5b622870e2039ec29ff = $(`<div id="html_a14cf53780e0b5b622870e2039ec29ff" style="width: 100.0%; height: 100.0%;"><b>Day 6.7 - Kyteler's Inn</b><br><i>Pub / history</i><br>Historic inn associated with the 14th-century trial of Alice Kyteler; suggested evening venue.<br><b>Cost:</b> Food/drink only<br><b>Allow:</b> Evening<br><b>Booking:</b> Dinner booking advisable<br><a href='https://www.google.com/maps/search/?api=1&query=Kyteler%27s%20Inn%2C%20St%20Kieran%27s%20Street%2C%20Kilkenny' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_3ed002177d719a11c40ff352ddd717e7.setContent(html_a14cf53780e0b5b622870e2039ec29ff);
+            
+        
+
+        marker_5d7a702bb4574f55d0f47b017e8630df.bindPopup(popup_3ed002177d719a11c40ff352ddd717e7)
+        ;
+
+        
+    
+    
+            marker_5d7a702bb4574f55d0f47b017e8630df.bindTooltip(
+                `<div>
+                     Day 6.7 Kyteler's Inn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d7a702bb4574f55d0f47b017e8630df.setIcon(icon_2daa8a423e05c9bd47c9ebdd2d0694cd);
+            
+    
+            var poly_line_63dd2d3965af205f910fe6481cfe8622 = L.polyline(
+                [[52.0598, -9.507], [52.5201, -7.8905], [52.3758, -7.9256], [52.6545, -7.2523], [52.6506, -7.2494], [52.6534, -7.2524], [52.6532, -7.253]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_f4f969321812813ccbf009c243bebba7);
+        
+    
+            poly_line_63dd2d3965af205f910fe6481cfe8622.bindTooltip(
+                `<div>
+                     Day 6 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_f4f969321812813ccbf009c243bebba7.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_a4942cb9782400cc8d72d720500dff93 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_c1e0decd2f9b5537976326baa083e579 = L.marker(
+                [52.6545, -7.2523],
+                {
+}
+            ).addTo(feature_group_a4942cb9782400cc8d72d720500dff93);
+        
+    
+            var icon_59515c05da3141e9cab3622a94d092f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc0210d3396f324ad516ca195991dbb8 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_048dd9e09b5e90d911645bcb87cc5b87 = $(`<div id="html_048dd9e09b5e90d911645bcb87cc5b87" style="width: 100.0%; height: 100.0%;"><b>Day 7.1 - JB's Bar & Guest House</b><br><i>Accommodation</i><br>Day-seven departure point after a final Kilkenny morning.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=JB%27s%20Bar%20and%20Guesthouse%2C%20Kilkenny%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_fc0210d3396f324ad516ca195991dbb8.setContent(html_048dd9e09b5e90d911645bcb87cc5b87);
+            
+        
+
+        marker_c1e0decd2f9b5537976326baa083e579.bindPopup(popup_fc0210d3396f324ad516ca195991dbb8)
+        ;
+
+        
+    
+    
+            marker_c1e0decd2f9b5537976326baa083e579.bindTooltip(
+                `<div>
+                     Day 7.1 JB's Bar & Guest House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1e0decd2f9b5537976326baa083e579.setIcon(icon_59515c05da3141e9cab3622a94d092f3);
+            
+    
+            var marker_939a95242506e3f60c01d9b7824ca16e = L.marker(
+                [52.6506, -7.2494],
+                {
+}
+            ).addTo(feature_group_a4942cb9782400cc8d72d720500dff93);
+        
+    
+            var icon_a84fb53f169edb88755d6a8c9f5025f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2a0ebc4fca9804cdcb581b8166696e3 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_89732a97a1a071ba25856f606a148017 = $(`<div id="html_89732a97a1a071ba25856f606a148017" style="width: 100.0%; height: 100.0%;"><b>Day 7.2 - Kilkenny Castle</b><br><i>Castle</i><br>Morning castle visit and gardens if not completed on Friday.<br><b>Cost:</b> Check current admission<br><b>Allow:</b> 1.5-2 hrs<br><b>Booking:</b> Optional<br><a href='https://www.google.com/maps/search/?api=1&query=Kilkenny%20Castle%2C%20The%20Parade%2C%20Kilkenny%2C%20R95%20YRK1' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_d2a0ebc4fca9804cdcb581b8166696e3.setContent(html_89732a97a1a071ba25856f606a148017);
+            
+        
+
+        marker_939a95242506e3f60c01d9b7824ca16e.bindPopup(popup_d2a0ebc4fca9804cdcb581b8166696e3)
+        ;
+
+        
+    
+    
+            marker_939a95242506e3f60c01d9b7824ca16e.bindTooltip(
+                `<div>
+                     Day 7.2 Kilkenny Castle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_939a95242506e3f60c01d9b7824ca16e.setIcon(icon_a84fb53f169edb88755d6a8c9f5025f4);
+            
+    
+            var marker_75da6b51279159f5acea102c9fd7deec = L.marker(
+                [53.0104, -6.3273],
+                {
+}
+            ).addTo(feature_group_a4942cb9782400cc8d72d720500dff93);
+        
+    
+            var icon_68e9e2c4dfe325d41cc79fc8e772caa1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d127c835054fdd1b420be33e4cc71d6 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_de19e36e4889d4ff0b7555d82356c8aa = $(`<div id="html_de19e36e4889d4ff0b7555d82356c8aa" style="width: 100.0%; height: 100.0%;"><b>Day 7.3 - Glendalough Monastic Site</b><br><i>Monastic site / lakes</i><br>Early medieval monastic settlement in a glacial valley, with round tower, churches and lakeside walks.<br><b>Cost:</b> Open monastic site free; visitor centre/parking may charge<br><b>Allow:</b> 1.5-2.5 hrs<br><b>Booking:</b> Optional; allow weekend parking time<br><a href='https://www.google.com/maps/search/?api=1&query=Glendalough%20Monastic%20Site%20and%20Visitor%20Centre%2C%20Co.%20Wicklow%2C%20A98%20HC80' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_8d127c835054fdd1b420be33e4cc71d6.setContent(html_de19e36e4889d4ff0b7555d82356c8aa);
+            
+        
+
+        marker_75da6b51279159f5acea102c9fd7deec.bindPopup(popup_8d127c835054fdd1b420be33e4cc71d6)
+        ;
+
+        
+    
+    
+            marker_75da6b51279159f5acea102c9fd7deec.bindTooltip(
+                `<div>
+                     Day 7.3 Glendalough Monastic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75da6b51279159f5acea102c9fd7deec.setIcon(icon_68e9e2c4dfe325d41cc79fc8e772caa1);
+            
+    
+            var marker_2c056dd3220f776fdc63c9207cbdc71e = L.marker(
+                [53.423, -6.24],
+                {
+}
+            ).addTo(feature_group_a4942cb9782400cc8d72d720500dff93);
+        
+    
+            var icon_4b00cc783db7a97fd795342bbfcd757c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb3f5d35b8d077b717b190a8c0e73aca = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_501c7e399465d36ac01d65af1a76b3b6 = $(`<div id="html_501c7e399465d36ac01d65af1a76b3b6" style="width: 100.0%; height: 100.0%;"><b>Day 7.4 - Dublin Airport Hotel Area</b><br><i>Accommodation</i><br>Stay close to the airport for the 11:15 departure next morning.<br><b>Cost:</b> Hotel dependent<br><b>Allow:</b> -<br><b>Booking:</b> Book in advance<br><a href='https://www.google.com/maps/search/?api=1&query=Dublin%20Airport%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_bb3f5d35b8d077b717b190a8c0e73aca.setContent(html_501c7e399465d36ac01d65af1a76b3b6);
+            
+        
+
+        marker_2c056dd3220f776fdc63c9207cbdc71e.bindPopup(popup_bb3f5d35b8d077b717b190a8c0e73aca)
+        ;
+
+        
+    
+    
+            marker_2c056dd3220f776fdc63c9207cbdc71e.bindTooltip(
+                `<div>
+                     Day 7.4 Dublin Airport Hotel Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c056dd3220f776fdc63c9207cbdc71e.setIcon(icon_4b00cc783db7a97fd795342bbfcd757c);
+            
+    
+            var poly_line_91c83f5f737b3135d85a7f0331c72abd = L.polyline(
+                [[52.6545, -7.2523], [52.6506, -7.2494], [53.0104, -6.3273], [53.423, -6.24]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_a4942cb9782400cc8d72d720500dff93);
+        
+    
+            poly_line_91c83f5f737b3135d85a7f0331c72abd.bindTooltip(
+                `<div>
+                     Day 7 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_a4942cb9782400cc8d72d720500dff93.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var feature_group_4f226ea7abda2e8b29bbd38bd5be299c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5bd0ae18bc46708a7c3a1e6015663cc9 = L.marker(
+                [53.423, -6.24],
+                {
+}
+            ).addTo(feature_group_4f226ea7abda2e8b29bbd38bd5be299c);
+        
+    
+            var icon_466ab94cca060c217858da44b630ce7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5fa583b8ae27190b8999260c49a3444 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_c21f10e121364ebf36ca646c4ea48915 = $(`<div id="html_c21f10e121364ebf36ca646c4ea48915" style="width: 100.0%; height: 100.0%;"><b>Day 8.1 - Dublin Airport Hotel Area</b><br><i>Accommodation</i><br>Departure morning.<br><b>Cost:</b> -<br><b>Allow:</b> -<br><b>Booking:</b> -<br><a href='https://www.google.com/maps/search/?api=1&query=Dublin%20Airport%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_b5fa583b8ae27190b8999260c49a3444.setContent(html_c21f10e121364ebf36ca646c4ea48915);
+            
+        
+
+        marker_5bd0ae18bc46708a7c3a1e6015663cc9.bindPopup(popup_b5fa583b8ae27190b8999260c49a3444)
+        ;
+
+        
+    
+    
+            marker_5bd0ae18bc46708a7c3a1e6015663cc9.bindTooltip(
+                `<div>
+                     Day 8.1 Dublin Airport Hotel Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5bd0ae18bc46708a7c3a1e6015663cc9.setIcon(icon_466ab94cca060c217858da44b630ce7e);
+            
+    
+            var marker_37c4098292e810f5100ec336d1bf7740 = L.marker(
+                [53.4264, -6.2499],
+                {
+}
+            ).addTo(feature_group_4f226ea7abda2e8b29bbd38bd5be299c);
+        
+    
+            var icon_27e4812b0e1eccc97cdd1918614d5776 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7e9d556a483b3f7fd47898e3b9f2c61 = L.popup({
+  "maxWidth": 360,
+});
+
+        
+            
+                var html_a50472700fd50d58ab8d031649547552 = $(`<div id="html_a50472700fd50d58ab8d031649547552" style="width: 100.0%; height: 100.0%;"><b>Day 8.2 - Dublin Airport</b><br><i>Airport</i><br>Return hire car, bag drop and security for 11:15 flight.<br><b>Cost:</b> Car-hire fuel/fees dependent<br><b>Allow:</b> Arrive around 08:15-08:30<br><b>Booking:</b> Verify terminal and rental return<br><a href='https://www.google.com/maps/search/?api=1&query=Dublin%20Airport%2C%20Ireland' target='_blank'>Open place in Google Maps</a></div>`)[0];
+                popup_a7e9d556a483b3f7fd47898e3b9f2c61.setContent(html_a50472700fd50d58ab8d031649547552);
+            
+        
+
+        marker_37c4098292e810f5100ec336d1bf7740.bindPopup(popup_a7e9d556a483b3f7fd47898e3b9f2c61)
+        ;
+
+        
+    
+    
+            marker_37c4098292e810f5100ec336d1bf7740.bindTooltip(
+                `<div>
+                     Day 8.2 Dublin Airport
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_37c4098292e810f5100ec336d1bf7740.setIcon(icon_27e4812b0e1eccc97cdd1918614d5776);
+            
+    
+            var poly_line_0cf0e80cbec14cbbdd414f2a8ae92672 = L.polyline(
+                [[53.423, -6.24], [53.4264, -6.2499]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_4f226ea7abda2e8b29bbd38bd5be299c);
+        
+    
+            poly_line_0cf0e80cbec14cbbdd414f2a8ae92672.bindTooltip(
+                `<div>
+                     Day 8 overview - straight lines, not road routing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_4f226ea7abda2e8b29bbd38bd5be299c.addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+        
+    
+            var layer_control_f514d517a0028cb656c07360d4a002cc_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ee46743d4859c8b32c22d6fcd29645e1,
+                },
+                overlays :  {
+                    "Day 1" : feature_group_181076b4e7f1eba56e4ca9512a77523c,
+                    "Day 2" : feature_group_2b07ac248306003f1e4d4888522a1578,
+                    "Day 3" : feature_group_34f7e5886c0ec8beb026d4727bd44bf3,
+                    "Day 4" : feature_group_fd244d0537932577b68dabddcc6a7161,
+                    "Day 5" : feature_group_47bf16793e5016afddbcc56ed795e174,
+                    "Day 6" : feature_group_f4f969321812813ccbf009c243bebba7,
+                    "Day 7" : feature_group_a4942cb9782400cc8d72d720500dff93,
+                    "Day 8" : feature_group_4f226ea7abda2e8b29bbd38bd5be299c,
+                },
+            };
+            let layer_control_f514d517a0028cb656c07360d4a002cc = L.control.layers(
+                layer_control_f514d517a0028cb656c07360d4a002cc_layers.base_layers,
+                layer_control_f514d517a0028cb656c07360d4a002cc_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
+
+        
+</script>
+</html>
