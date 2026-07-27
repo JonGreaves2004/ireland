@@ -50,13 +50,70 @@
             </script>
 
         
+
+<style>
+    .trip-map-title {
+        position: fixed;
+        left: 50%;
+        bottom: 28px;
+        transform: translateX(-50%);
+        z-index: 9999;
+        box-sizing: border-box;
+        width: min(720px, calc(100% - 24px));
+        padding: 9px 13px;
+        border: 1px solid #bbb;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+        font-family: Arial, sans-serif;
+        line-height: 1.3;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .trip-map-title small {
+        display: inline-block;
+        margin-top: 2px;
+    }
+
+    /* Keep the collapsed day selector compact and finger-friendly. */
+    .leaflet-control-layers-toggle {
+        width: 44px !important;
+        height: 44px !important;
+        background-size: 24px 24px;
+    }
+
+    .leaflet-control-layers-expanded {
+        max-width: calc(100vw - 30px);
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+        .trip-map-title {
+            bottom: 24px;
+            width: calc(100% - 16px);
+            padding: 7px 10px;
+            font-size: 13px;
+        }
+
+        .trip-map-title small {
+            font-size: 11px;
+        }
+
+        .leaflet-top.leaflet-right {
+            top: 4px;
+            right: 4px;
+        }
+    }
+</style>
+
 </head>
 <body>
     
     
-    <div style="position: fixed; top: 10px; left: 50px; z-index:9999; background:white;
-    padding:10px 14px; border:1px solid #bbb; border-radius:8px; font-family:Arial;
-    box-shadow:0 1px 5px rgba(0,0,0,.25)">
+    <div class="trip-map-title">
     <b>Ireland Road Trip - 20-27 September 2026</b><br>
     <small>Lines show the stop sequence, not exact roads. Use each marker's Google Maps link for navigation.</small>
     </div>
@@ -2534,7 +2591,7 @@
                 layer_control_f514d517a0028cb656c07360d4a002cc_layers.overlays,
                 {
   "position": "topright",
-  "collapsed": false,
+  "collapsed": true,
   "autoZIndex": true,
 }
             ).addTo(map_63a68a30a6abffe96fedbd5a0099cb9e);
